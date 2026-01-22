@@ -19,7 +19,7 @@ with st.sidebar:
         st.stop()
     
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
 # --- HÀM GỌI AI ĐỂ TẠO QUIZ ---
 def generate_quiz(topic, num_questions=5):
@@ -116,3 +116,4 @@ if st.session_state.quiz_data:
 else:
 
     st.info("Hãy nhập chủ đề và nhấn nút 'Tạo đề thi mới' để bắt đầu.")
+
